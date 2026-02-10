@@ -6,13 +6,14 @@
     <title>Problem 1</title>
 </head>
 <body>
+    <h1>Name and Children</h1>
     <div id = "output"></div>
     <script>
         let firstname = prompt("What is your first name?");
         let lastname = prompt("What is your last name?");
         alert("Your name is: " + firstname + " " + lastname);
         let numChildren = prompt("How many children do you have?");
-        numChildren = ParseInt(numChildren);
+        numChildren = parseInt(numChildren);
         let childrenText;
         if (numChildren == 0){
             childrenText = "You have no children"
