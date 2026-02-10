@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers in Range</title>
+</head>
+<body>
+    <h1>Numbers in Range</h1>
+    <div id = "oddNumbers">Odd Numbers:</div>
+    <div id = "sum">Sum:</div>
+    <script>
+        let num1 = prompt("Give me the first integer");
+        num1 = parseInt(num1);
+        let num2 = prompt("Give me the second integer");
+        num2 = parseInt(num2);
+        let start = num1 <= num2 ? num1 : num2;
+        let end = num1 <= num2 ? num2 : num1;
+
+        let OddNumbers = "";
+        let sum = 0;
+
+        for(let i = start; i <= end; ++i){
+            if (i % 2 != 0){
+                OddNumbers = OddNumbers + i;
+            }
+            sum += i; 
+        }
+    
+
+    </script>
+</body>
+</html>
