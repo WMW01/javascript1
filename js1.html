@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <meta name="viewport" content="width=device-width, initIal-scale=1.0">
     <title>Problem 1</title>
 </head>
 <body>
@@ -17,8 +17,10 @@
         let childrenText;
         if (numChildren == 0){
             childrenText = "You have no children"
+        } else if (numChildren == 1){
+            childrenText = "You have 1 child"
         } else {
-            childrenText = "You have " + numChildren + "children"
+            childrenText = "You have " + numChildren + " children"
         }
 
         document.getElementById("output").innerHTML = "<p>" + childrenText + "</p>";
