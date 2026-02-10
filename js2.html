@@ -1,0 +1,21 @@
+<iDOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Temperature Conversion</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <script>
+        let Fahrenheit = prompt("Give me a temperature in Fahrenheit");
+        Fahrenheit = ParseFloat(Fahrenheit);
+        let CelsiusFromF = (Fehrenheit - 32) * (5 / 9);
+        alert("Fahrenheit converted to Celsius is: " + CelsiusFromF);
+        let Celsius = prompt("Give me a temperature in Celsius");
+        Celsius = ParseFloat(Celsius);
+        let FehrenheitFromC = (Celsius * (9 / 5)) + 32;
+        alert("Celsius converted to Fehrenheit is: " + FehrenheitFromC);
+    </script>
+</body>
+</html>
